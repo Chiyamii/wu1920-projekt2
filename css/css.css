@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #FF912D;
+    height: 68px;
+    width: auto;
+}
+
+.iconugn {
+    flex-grow: 0;
+    flex-basis: auto | auto;
+}
+
+.logo {
+    flex-grow: 1;
+    font-family: 'Poppins';
+    font-size: 26px;
+}
+
+.menuicon {
+    float: right;
+    flex-basis: 43px;
+}
+
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: lightblue;
+        visibility: hidden;
+    }
+    nav {
+        visibility: hidden;
+    }
+    header {
+        visibility: hidden;
+    }
+    footer {
+        visibility: hidden;
+    }
+    section {
+        visibility: hidden;
+    }
+}
