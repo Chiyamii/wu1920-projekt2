@@ -45,12 +45,14 @@ a {
 
 #main_menu {
     background-color: #333333;
-    display: none;
+    transform: translateX(115%);
+    transition: transform .5s ease;
 }
 
 #main_menu.active {
     display: block;
     margin: 0;
+    transform: translateX(0);
 }
 
 #exit_menu {
@@ -72,18 +74,20 @@ nav {
     height: 100%;
     right: 0;
     top: 0;
+    z-index: 10;
 }
 
 .bestall {
     border-radius: 30px;
     background-color: #FFB800;
     color: black;
-    bottom: 0;
-    width: 163px;
+    width: 172px;
     height: 62px;
     font-family: 'Poppins';
     font-weight: bold;
-    font-size: 31px;
+    font-size: 31px;  
+    margin-bottom: 27px;
+    margin-left: 21px;
 }
 
 #line {
@@ -100,6 +104,117 @@ nav {
     font-size: 26px;
     padding-left: 20px;
     height: 30px;
+}
+
+#txt {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 0;
+}
+
+#centered {
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Sintony';
+}
+
+.container {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Sintony';
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 100;
+}
+
+img {
+    width: 100%;
+}
+
+.genvag {
+    width: 100%;
+    height: 150px;
+    background-color: #333333;
+    border-width: 2px;
+    border-style: solid none solid none;
+    border-color: black;
+    z-index: 1;
+}
+
+.box {
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    background-color: #333333;
+}
+/*
+.genvag1 {
+    position: absolute;
+}
+/*
+.genvag {
+    position: relative;
+    width: 50%;
+  }
+*/
+  .overlay {
+    position: inherit;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: inherit;
+    width: 100%;
+    opacity: 0.7;
+    background-color: #333333;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    z-index: 2;
+  }
+
+
+footer {
+    background-color: #333333;
+    height: 515px;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Poppins';
+    padding-top: 45px;
+    font-size: 26px;
+    text-decoration: underline;
+    text-decoration-color: #FFB800;
+}
+
+.ftext {
+    font-family: 'Sintony';
+    font-size: 20px;
+    margin: 5px;
+}
+
+.cr {
+    margin-top: 70px;
+    font-family: 'Sintony';
+    font-size: 12px;
 }
 
 @media only screen and (min-width: 600px) {
