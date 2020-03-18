@@ -63,8 +63,6 @@ document.getElementById('exit_menu').addEventListener('click', function () { //K
         toggleClass(document.getElementById('content6'), "active") //togglar mellan aktiv och inaktiv som gör att meny-elementet kommer upp eller försvinner
     })
 
-
-
 function toggleClass(element, className) {
     var classString = element.className, nameIndex = classString.indexOf(className);
     if (nameIndex == -1) {
@@ -75,3 +73,18 @@ function toggleClass(element, className) {
     }
     element.className = classString
 } 
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}

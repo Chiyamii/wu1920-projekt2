@@ -113,6 +113,7 @@ nav {
     z-index: 0;
 }
 
+/*påminnelse: undersök variabel senare*/
 #centered {
     position: absolute;
     width: 70%;
@@ -454,6 +455,62 @@ b {
 #t650 {
     line-height: 140%;
     padding-bottom: 5px;
+}
+
+#line1 {
+    background-color: black;
+    height: 2px;
+    margin-top: 25px;
+}
+
+#pfl {
+    padding-top: 30px;
+    margin-bottom: -28px;
+}
+
+#mail {
+    color: cornflowerblue;
+}
+
+.collapsible {
+    margin: auto;
+    display: block;
+    font-size: 25px;
+    padding-top: 15px;
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 100;
+    background-color: white;
+}
+  
+.content {
+    display: none;
+}
+
+#line2 {
+    background-color: #FFB800;
+    height: 2px;
+}
+
+.details {
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    padding-left: 10px;
+}
+
+.item {
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 20px;
+}
+
+#ilt {
+    text-align: center;
+    font-family: 'Sintony';
+    padding: 20px;
+    padding-bottom: 0;
+    font-weight: bold;
 }
 
 @media only screen and (min-width: 600px) {
