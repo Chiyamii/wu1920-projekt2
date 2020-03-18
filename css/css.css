@@ -129,7 +129,7 @@ nav {
     font-size: 14px;
 }
 
-h1 {
+h2 {
     font-size: 24px;
     font-family: 'Poppins';
     font-weight: 100;
@@ -137,24 +137,6 @@ h1 {
 
 img {
     width: 100%;
-}
-
-.genvag {
-    width: 100%;
-    height: 100%;
-    background-color: #333333;
-    z-index: 1;
-}
-
-.box {
-    position: inherit;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0.5;
 }
 
 .overlay {
@@ -185,7 +167,7 @@ footer {
     text-align: center;
 }
 
-h2 {
+h3 {
     font-family: 'Poppins';
     padding-top: 45px;
     font-size: 26px;
@@ -231,9 +213,247 @@ h2 {
 }
 
 .arrow {
-    width: 31px;
-    height: 31px;
-    padding-top: 10px;
+    width: 35%;
+    vertical-align: middle;
+}
+
+.align {
+    display: flex;
+    vertical-align: sub;
+    font-size: 16px;
+    font-family: 'Sintony';
+    float: right;
+}
+
+
+/*Massor av kopior av samma sak då id:t bara funkar en gång per sida & javascripten funkar inte om det är en klass*/
+#collapsible {
+  cursor: pointer;
+  background-color: white;
+  margin: auto;
+  display: block;
+  font-size: 16px;
+  font-family: 'Sintony';
+  line-height: 40%;
+}
+#content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: white;
+  font-family: 'Sintony';
+  font-size: 13.5px;
+  line-height: 40%;
+  margin-top: -60px;
+  position: relative;
+}
+#content.active {
+    display: block;
+}
+#recall {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible1 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+}
+#content1 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content1.active {
+    display: block;
+}
+#recall1 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible2 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+}
+#content2 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content2.active {
+    display: block;
+}
+#recall2 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible3 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+}
+#content3 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content3.active {
+    display: block;
+}
+#recall3 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible4 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+}
+#content4 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content4.active {
+    display: block;
+}
+#recall4 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible5 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+}
+#content5 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content5.active {
+    display: block;
+}
+#recall5 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+#collapsible6 {
+    cursor: pointer;
+    background-color: white;
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    font-family: 'Sintony';
+    line-height: 40%;
+    margin-bottom: -25px;
+}
+#content6 {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white;
+    font-family: 'Sintony';
+    font-size: 13.5px;
+    line-height: 40%;
+    margin-top: -60px;
+    position: relative;
+}
+#content6.active {
+    display: block;
+}
+#recall6 {
+    margin: auto;
+    display: grid;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+.compact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.note {
+    line-height: 110%;
+    font-size: 12px;
+    margin: 0;
+    padding-top: 3px;
+}
+
+b {
+    color: black;
+}
+
+#t650 {
+    line-height: 140%;
+    padding-bottom: 5px;
 }
 
 @media only screen and (min-width: 600px) {
