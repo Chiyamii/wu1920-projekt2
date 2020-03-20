@@ -14,15 +14,23 @@
 <body>
 
     <header>
-        <img class="iconugn" src="img/kakelgn.png">
+        <img class="iconugn" src="img/kakelgn.png" alt="En ikon av en kakelugn">
         <h1 class="logo">Kakelugnspannan</h1>
+        <section class="nav2">
+            <div class="pc"><a href="index.html">Startsida</a></div>
+            <div class="pc"><a href="kakelugn.html">Kakelugnar</a></div>
+            <div class="pc"><a href="tillbehor.html">Tillbehör</a></div>
+            <div class="bestall"> <a href="bestall.html">
+                <img src="img/Screenshot_2.png" id="llb" alt="Beställ->">
+            </a></div>
+        </section>
         <button id="menu_button"><img class="menuicon" src="img/menu-24px.svg"></button>
     </header>
 
     <nav id="main_menu">
         <button id="exit_menu"><svg id="close" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
                 viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z" />
+                <path fill="none" d="M0 0h24v24H0V0z"/>
                 <path
                     d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
             </svg></button>
@@ -41,11 +49,12 @@
     </nav>
 
     <div id="txt">
-        <img src="img/start1.jpg" style="width: 100%;">
+        <img class="mobilehidden" src="img/start.jpg">
+        <img class="pchidden" src="img/start1.jpg" style="width: 100%;">
         <div id="centered">
-            <p style="font-size: 36px;">VÄRME</p>
-            <p style="font-size: 26px;">TILL</p>
-            <p style="font-size: 36px;">HELA HUSET</p>
+            <p id="cfr1">VÄRME</p>
+            <p id="cfr2">TILL</p>
+            <p id="cfr1">HELA HUSET</p>
         </div>
     </div>
 
@@ -56,12 +65,18 @@
             cirkulerar ut i ditt befintliga vattenburna värmesystem. Detta sprider värmen i hela huset så får du ut
             värmen där du vill ha den, i radiatorer, den vattenburna golvvärmen och det finns även möjlighet att få
             varmvatten till dusch & bad.</p>
-        <img src="img/Hus.jpg" style="width: 90%;">
+        <img id="iimg1" src="img/Hus.jpg">
     </section>
 
-    <a href="kakelugn.html"><img src="img/knapp.png" style="padding-top: 20px;"></a>
-    <a href="tillbehor.html"><img src="img/knapp2.png"></a>
+    <section class="pchidden">
+        <a href="kakelugn.html"><img src="img/knapp.png" style="padding-top: 20px;"></a>
+        <a href="tillbehor.html"><img src="img/knapp2.png"></a>
+    </section>
 
+    <section class="knappar">
+        <a href="kakelugn.html"><img src="img/knapp1n.png"></a>
+        <a href="tillbehor.html"><img src="img/knapp2n.png"></a>
+    </section>
 
     <section class="container">
         <h2>Energieffektiv</h2>
@@ -69,7 +84,7 @@
             energin från veden markant. Mycket av värmen efter uppnådd maxtemperatur går ut genom skorstenen. Våra
             kakelugnar på Kakelugnspannan har istället en hög effektiv verkningsgrad på upp till 88% och en effekt på
             upp till 22,5kW eftersom den värmer upp avkylt vatten som kommer i retur från husets värmesystem.</p>
-        <img src="img/aa.png" style="width: 100%;">
+        <img id="iimg2" src="img/aa.png">
     </section>
 
 
@@ -81,21 +96,26 @@
             vattenburna värmesystemet. Du får på så vis en mjuk och behaglig värme i hela huset, alltid rätt temp tack
             vare termostaterna.
         </p>
-        <img src="img/rokugn.png" style="width: 40%; display: grid; margin: auto;">
+        <img id="iimg3" src="img/rokugn.png">
     </section>
 
     <footer>
-        <h3>Du hittar oss vid:</h3>
-        <p class="ftext">Kakelugnspannan AB</p>
-        <p class="ftext">Metallvägen 14, 435 43</p>
-        <p class="ftext">Mölnycke, Västra Götaland</p>
-        <p class="ftext">Sverige</p>
-        <h3>Kontakta oss:</h3>
-        <p class="ftext">031-3383736</p>
-        <p class="ftext">info@kakelugnspannan.com</p>
+        <section class="columns">
+            <div>
+                <h3>Du hittar oss vid:</h3>
+                <p class="ftext">Kakelugnspannan AB</p>
+                <p class="ftext">Metallvägen 14, 435 43</p>
+                <p class="ftext">Mölnycke, Västra Götaland</p>
+                <p class="ftext">Sverige</p>
+            </div>
+            <div>
+            <h3>Kontakta oss:</h3>
+                <p class="ftext">031-3383736</p>
+                <p class="ftext">info@kakelugnspannan.com</p>
+            </div>
+        </section>
         <p class="cr">Copyright © Kakelugnspannan AB</p>
     </footer>
-
 
 
     <script src="js/js.js"></script>

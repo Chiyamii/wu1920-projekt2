@@ -30,8 +30,9 @@ a {
     flex-grow: 1;
     font-family: 'Poppins';
     font-weight: lighter;
-    font-size: 7vw;
+    font-size: 28px;
     margin: auto;
+    max-width: 80%;
 }
 
 .menuicon {
@@ -113,7 +114,6 @@ nav {
     z-index: 0;
 }
 
-/*påminnelse: undersök variabel senare*/
 #centered {
     position: absolute;
     width: 70%;
@@ -195,9 +195,7 @@ h3 {
 }
 
 .modell {
-    border-width: 2px;
-    border-style: solid none none none;
-    border-color: black;
+    width: 100%;
 }
 
 .name {
@@ -226,6 +224,11 @@ h3 {
     float: right;
 }
 
+#llb {
+    width: 85%; 
+    padding-top: 10px; 
+    padding-left: 10px;
+}
 
 /*Massor av kopior av samma sak då id:t bara funkar en gång per sida & javascripten funkar inte om det är en klass*/
 #collapsible {
@@ -235,7 +238,6 @@ h3 {
   display: block;
   font-size: 16px;
   font-family: 'Sintony';
-  line-height: 40%;
 }
 #content {
   padding: 0 18px;
@@ -244,7 +246,6 @@ h3 {
   background-color: white;
   font-family: 'Sintony';
   font-size: 13.5px;
-  line-height: 40%;
   margin-top: -60px;
   position: relative;
 }
@@ -263,7 +264,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
 }
 #content1 {
     padding: 0 18px;
@@ -272,7 +272,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -291,7 +290,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
 }
 #content2 {
     padding: 0 18px;
@@ -300,7 +298,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -319,7 +316,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
 }
 #content3 {
     padding: 0 18px;
@@ -328,7 +324,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -347,7 +342,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
 }
 #content4 {
     padding: 0 18px;
@@ -356,7 +350,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -375,7 +368,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
 }
 #content5 {
     padding: 0 18px;
@@ -384,7 +376,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -403,7 +394,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    line-height: 40%;
     margin-bottom: -25px;
 }
 #content6 {
@@ -413,7 +403,6 @@ h3 {
     background-color: white;
     font-family: 'Sintony';
     font-size: 13.5px;
-    line-height: 40%;
     margin-top: -60px;
     position: relative;
 }
@@ -425,11 +414,6 @@ h3 {
     display: grid;
     background-color: white;
 }
-
-
-
-
-
 
 
 
@@ -510,24 +494,242 @@ b {
     font-family: 'Sintony';
     padding: 20px;
     padding-bottom: 0;
-    font-weight: bold;
+}
+
+.pc {
+    display: none;
+}
+
+.nav2 {
+    display: none;
+}
+
+.mobilehidden {
+    display: none;
+}
+
+#cfr1 {
+    font-size: 36px;
+}
+
+#cfr2 {
+    font-size: 26px;
+}
+
+hr {
+    height: 2px;
+    margin: 0;
+    background-color: black;
+}
+
+.knappar {
+    display: none;
+}
+
+#iimg1 {
+    width: 90%;
+}
+
+#iimg2 {
+    width: 100%;
+}
+
+#iimg3 {
+    width: 40%; 
+    display: grid; 
+    margin: auto;
+}
+
+#container1 {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: 'Sintony';
+}
+
+
+@media only screen and (min-width: 992px) {
+
+    header {
+        height: 100px;
+    }
+
+    .logo {
+        margin-left: 3px;
+        font-size: 210%;
+        padding-right: 20px;
+    }
+
+    .iconugn {
+        width: 75px;
+        max-width: 75px;
+    }
+
+    #menu_button {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+        flex-grow: 1;
+        font-family: 'Poppins';
+        font-size: 170%;
+        margin: auto;
+        grid-gap: 2px;
+    }
+
+    a {
+        color: black;
+    }
+    .nav2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .bestall {
+        background-color: #333333;
+        margin: auto;
+        margin-right: 5%;
+    }
+
+    .mobilehidden {
+        display: block;
+    }
+    
+    .pchidden {
+        display: none;
+    }
+
+    #cfr1 {
+        font-size: 60px;
+    }
+
+    #cfr2 {
+        font-size: 45px;
+    }
+
+    h2 {
+        padding-top: 26px;
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    #iimg1 {
+        display: grid; 
+        margin: auto;
+        width: 70%;
+    }
+    
+    #iimg2 {
+        display: grid; 
+        margin: auto;
+        width: 70%;
+    }
+    
+    #iimg3 {
+        width: 20%; 
+        display: grid; 
+        margin: auto;
+        padding-bottom: 50px;
+    }
+
+    .modell {
+        display: block;
+        margin: auto;
+        width: 60%;
+    }
+
+    .item {
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    .knappar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 70px;
+    }
+
+    #content {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content1 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content2 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content3 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content4 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content5 {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    #content6 {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    #container1 {
+        margin-left: 30%;
+        margin-right: 30%;
+        font-family: 'Sintony';
+        font-size: 14px;
+    }
+
+    .t70s50 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #modell {
+        width: 40%;
+        display: block;
+        margin: auto;
+    }
+
+    #pfl {
+        width: 40%;
+        margin: auto;
+        display: block;
+        padding-bottom: 40px;
+    }
 }
 
 @media only screen and (min-width: 600px) {
-    body {
-        background-color: lightblue;
-        visibility: hidden;
+    .container {
+        margin-left: 20%;
+        margin-right: 20%;
     }
-    nav {
-        visibility: hidden;
-    }
-    header {
-        visibility: hidden;
-    }
-    footer {
-        visibility: hidden;
-    }
-    section {
-        visibility: hidden;
+        .logo {
+        margin-left: 3px;
+        font-size: 35px;
     }
 }
