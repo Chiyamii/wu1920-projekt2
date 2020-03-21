@@ -1,3 +1,6 @@
+
+/*VARNING: Helt osorterat. Inte ens jag vet hur jag hittar... CTRL + F är din bäste vän just nu.... tips: media aquaries är längst ner*/
+
 body {
     margin: 0;
 }
@@ -30,7 +33,7 @@ a {
     flex-grow: 1;
     font-family: 'Poppins';
     font-weight: lighter;
-    font-size: 28px;
+    font-size: 7.3vw;
     margin: auto;
     max-width: 80%;
 }
@@ -69,7 +72,7 @@ a {
     filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(94deg) brightness(98%) contrast(107%);
 }
 
-nav {
+#main_menu {
     position: fixed;
     width: 75%;
     height: 100%;
@@ -394,7 +397,6 @@ h3 {
     display: block;
     font-size: 16px;
     font-family: 'Sintony';
-    margin-bottom: -25px;
 }
 #content6 {
     padding: 0 18px;
@@ -441,7 +443,7 @@ b {
     padding-bottom: 5px;
 }
 
-#line1 {
+.line1 {
     background-color: black;
     height: 2px;
     margin-top: 25px;
@@ -452,7 +454,7 @@ b {
     margin-bottom: -28px;
 }
 
-#mail {
+.mail {
     color: cornflowerblue;
 }
 
@@ -471,7 +473,7 @@ b {
     display: none;
 }
 
-#line2 {
+.line2 {
     background-color: #FFB800;
     height: 2px;
 }
@@ -508,7 +510,7 @@ b {
     display: none;
 }
 
-#cfr1 {
+.cfr1 {
     font-size: 36px;
 }
 
@@ -528,6 +530,7 @@ hr {
 
 #iimg1 {
     width: 90%;
+    padding-bottom: 20px;
 }
 
 #iimg2 {
@@ -599,7 +602,7 @@ hr {
         display: none;
     }
 
-    #cfr1 {
+    .cfr1 {
         font-size: 60px;
     }
 

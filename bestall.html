@@ -4,61 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Kakelugnspannan</title>
     <link rel="stylesheet" href="css/css.css">
     <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css?family=Sintony&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+
+    <!--Det som är inuti den oranga baren-->
     <header>
-        <img class="iconugn" src="img/kakelgn.png">
+        <img class="iconugn" src="img/kakelgn.png" alt="En ikon av en kakelugn">
         <h1 class="logo">Kakelugnspannan</h1>
-        <section class="nav2">
+
+        <!--Navigering nedanför som endast syns vid användning av dator-->
+        <nav class="nav2">
             <div class="pc"><a href="index.html">Startsida</a></div>
             <div class="pc"><a href="kakelugn.html">Kakelugnar</a></div>
             <div class="pc"><a href="tillbehor.html">Tillbehör</a></div>
-            <div class="bestall"> <a href="bestall.html">
-                <img src="img/Screenshot_2.png" style="width: 85%; padding-top: 10px; padding-left: 10px;">
-            </a></div>
-        </section>
-        <button id="menu_button"><img class="menuicon" src="img/menu-24px.svg"></button>
+            <div class="bestall"> 
+                <a href="bestall.html"><img src="img/Screenshot_2.png" id="llb" alt="Beställ->"></a>
+            </div>
+        </nav>
+
+        <!--Knapp som endast syns vid mobil-->
+        <button id="menu_button"><img class="menuicon" src="img/menu-24px.svg" alt="meny"></button>
+
     </header>
 
+
+    <!--Meny som endast syns med mobilen-->
     <nav id="main_menu">
-        <button id="exit_menu"><svg id="close" xmlns="http://www.w3.org/2000/svg" width="42" height="42"
-                viewBox="0 0 24 24">
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path
-                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
-            </svg></button>
+        <button id="exit_menu">
+            <svg id="close" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24">
+                <path fill="none" d="M0 0h24v24H0V0z"/>
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z" />
+            </svg>
+        </button>
+
         <div id="line"></div>
+
+        <!--Du kommer troligtsvis se fler ställen med någon enstaka style då det känns onödigt att skapa en ny tag för något litet-->
         <p class="navtext" style="padding-top: 70px;"><a href="index.html">Startsida</a></p>
         <p class="navtext"><a href="kakelugn.html">Kakelugnar</a></p>
         <p class="navtext"><a href="tillbehor.html">Tillbehör</a></p>
         <p class="navtext" style="color: #FFB800; font-size: 18px;">Se även vår andra sida:</p>
-        <p class="navtext" style="padding-left: 40px; margin-top: -10px;"><a
-                href="https://www.vedeldadstenugn.se/">Vedeldade Pizzaugnar</a></p>
+        <p class="navtext" style="padding-left: 40px; margin-top: -10px;"><a href="https://www.vedeldadstenugn.se/">Vedeldade Pizzaugnar</a></p>
+
         <div style="position: absolute; bottom: 0;">
-            <button class="bestall"> <a href="bestall.html">
-                <img src="img/Screenshot_1.png" style="width: 90%; padding-top: 10px;">
-            </a></button>
+            <div class="bestall"> 
+                <a href="bestall.html"><img src="img/Screenshot_1.png" style="width: 90%; padding-top: 10px; padding-left: 10px;" alt="Beställ->"></a>
+            </div>
         </div>
+
     </nav>
+
 
     <h2 class="centered">Beställ</h2>
     <div id="line1"> </div>
 
     <!-- Länken till mailen nedanför verkar inte fungera för mig men jag behåller det då det är meningen att det ska fungera. -->
     <section class="container">
-        <p>Fyll i vårt formulär eller maila <a id="mail" href="mailto:info@kakelugnspannan.com">info@kakelugnspannan.com</a> för att beställa valfri kakelugn eller produkt, eller om du vill fråga vilken som funkar bäst för dig.</p>
-        <p>Du får gärna ringa oss om du har några frågor via <a id="mail" href="tel:031-3383736">031-3383736</a>.</p>
+        <p>Fyll i vårt formulär eller maila <a class="mail" href="mailto:info@kakelugnspannan.com">info@kakelugnspannan.com</a> för att beställa valfri kakelugn eller produkt, eller om du vill fråga vilken som funkar bäst för dig.</p>
+        <p>Du får gärna ringa oss om du har några frågor via <a class="mail" href="tel:031-3383736">031-3383736</a>.</p>
     </section>
 
-    <img src="img/Kakelugn 650 rum.jpg" id="pfl">
+    <img src="img/Kakelugn_650_rum.jpg" id="pfl" alt="Mysig kakelugn">
+
 
     <footer>
+
+        <!--Kolumner som visar sig vid dator-läge-->
         <section class="columns">
+
             <div>
                 <h3>Du hittar oss vid:</h3>
                 <p class="ftext">Kakelugnspannan AB</p>
@@ -66,15 +85,22 @@
                 <p class="ftext">Mölnycke, Västra Götaland</p>
                 <p class="ftext">Sverige</p>
             </div>
+
             <div>
             <h3>Kontakta oss:</h3>
                 <p class="ftext">031-3383736</p>
                 <p class="ftext">info@kakelugnspannan.com</p>
             </div>
+
         </section>
+
         <p class="cr">Copyright © Kakelugnspannan AB</p>
+
     </footer>
 
+
     <script src="js/js.js"></script>
+
+
 </body>
 </html>
