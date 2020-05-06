@@ -7,6 +7,11 @@ document.getElementById('exit_menu').addEventListener('click', function () { //K
 })
 
 //Flera kopior av samma då det är ett id som bara används en gång annars
+
+var elementExists = document.getElementById("collapsible");         //En if-sats som kollar att elementen finns på sidan
+if (typeof(elementExists) != 'undefined' && elementExists != null)
+{
+
     document.getElementById('collapsible').addEventListener('click', function () { //Kopplar in sig i dokumentet (menu_button är vad man har döpt id:t till)//När någon klickar (går att ta andra också, ex hover) då körs funktionen
         toggleClass(document.getElementById('content'), "active") //togglar mellan aktiv och inaktiv som gör att meny-elementet kommer upp eller försvinner
     })
@@ -62,6 +67,8 @@ document.getElementById('exit_menu').addEventListener('click', function () { //K
     document.getElementById('recall6').addEventListener('click', function () { //Kopplar in sig i dokumentet (menu_button är vad man har döpt id:t till)//När någon klickar (går att ta andra också, ex hover) då körs funktionen
         toggleClass(document.getElementById('content6'), "active") //togglar mellan aktiv och inaktiv som gör att meny-elementet kommer upp eller försvinner
     })
+
+}
 
 function toggleClass(element, className) {
     var classString = element.className, nameIndex = classString.indexOf(className);
