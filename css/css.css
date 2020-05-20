@@ -674,6 +674,10 @@ hr {
         font-size: 36px;
     }
 
+    dt {
+        font-size: 16px;
+    }
+
     .nav2 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
