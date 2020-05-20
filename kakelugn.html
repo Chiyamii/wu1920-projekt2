@@ -46,15 +46,15 @@
         <div id="line"></div>
 
         <!--Du kommer troligtsvis se fler ställen med någon enstaka style då det känns onödigt att skapa en ny tag för något litet-->
-        <p class="navtext" style="padding-top: 70px;"><a href="index.html">Startsida</a></p>
+        <p id="navtext0"><a href="index.html">Startsida</a></p>
         <p class="navtext"><a href="kakelugn.html">Kakelugnar</a></p>
         <p class="navtext"><a href="tillbehor.html">Tillbehör</a></p>
-        <p class="navtext" style="color: #FFB800; font-size: 18px;">Se även vår andra sida:</p>
-        <p class="navtext" style="padding-left: 40px; margin-top: -10px;"><a href="https://www.vedeldadstenugn.se/">Vedeldade Pizzaugnar</a></p>
+        <p id="navtext1">Se även vår andra sida:</p>
+        <p id="navtext2"><a href="https://www.vedeldadstenugn.se/">Vedeldade Pizzaugnar</a></p>
 
-        <div style="position: absolute; bottom: 0;">
+        <div id="bestall">
             <div class="bestall"> 
-                <a href="bestall.html"><img src="img/Screenshot_1.png" style="width: 90%; padding-top: 10px; padding-left: 10px;" alt="Beställ->"></a>
+                <a href="bestall.html"><img src="img/Screenshot_1.png" id="order_button" alt="Beställ->"></a>
             </div>
         </div>
 
@@ -81,7 +81,7 @@
             </div>
         </div>
 
-        <button type="button" id="collapsible1"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button>
+        <button type="button" id="collapsible1"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
         
         
             <div id="content1">
@@ -107,7 +107,7 @@
                 <p><b>Avstånd till brännbar vägg baktill:</b> 50 mm</p>
                 <p><b>Avständ till brännbar pararell sidovägg:</b> 100 mm</p>
                 <p><b>Fundament som underlag:</b> Krävs</p>
-                <button type="button" id="recall1"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+                <button type="button" id="recall1"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
             </div>
 
 
@@ -122,7 +122,7 @@
             </div>
         </div>
 
-        <button type="button" id="collapsible2"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button> 
+        <button type="button" id="collapsible2"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
         
         
         <div id="content2">
@@ -148,7 +148,7 @@
             <p><b>Avstånd till brännbar vägg baktill:</b> 50 mm</p>
             <p><b>Avständ till brännbar pararell sidovägg:</b> 100 mm</p>
             <p><b>Fundament som underlag:</b> Krävs</p>
-            <button type="button" id="recall2"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+            <button type="button" id="recall2"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
         </div>
 
         <hr>
@@ -162,7 +162,7 @@
         </div>
 
         <!--Knapp som extendar nedanstående div --  här klagar validatorn en del för det är en <p> inuti en button, men om jag tar bort det så funkar inte min design-->
-        <button type="button" id="collapsible"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" style="width: 25px" alt="Downpointing arrow"> </button>
+        <button type="button" id="collapsible"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
 
             <!--(Syns inte förrens man klickat på den)-->
             <div id="content">
@@ -188,7 +188,7 @@
                 <p><b>Avstånd till brännbar vägg baktill:</b> 50 mm</p>
                 <p><b>Avständ till brännbar pararell sidovägg:</b> 100 mm</p>
                 <p><b>Fundament som underlag:</b> Krävs</p>
-                <button type="button" id="recall"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+                <button type="button" id="recall"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
             </div>
 
     </div>
@@ -210,7 +210,7 @@
             </div>
         </div>
 
-        <button type="button" id="collapsible4"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button>   
+        <button type="button" id="collapsible4"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
 
         <div id="content4">
             <p><b>Effekt:</b> 19,5 kW totalt</p>
@@ -237,7 +237,7 @@
             <p><b>Fundament som underlag:</b> Krävs</p>
             <p class="note">+Vid köp av krona tillkommer 140 mm</p>
             <p class="note">*Kakelugnen går att beställa i en nedkortad version med lägre volym för dig med 205 cm takhöjd. Vid lägre takhöjd kan man välja 370 L och förlänga den något.</p>
-            <button type="button" id="recall4"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+            <button type="button" id="recall4"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
         </div>
 
         
@@ -252,7 +252,7 @@
             </div>
         </div>
 
-        <button type="button" id="collapsible5"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button>   
+        <button type="button" id="collapsible5"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
 
 
         <div id="content5">
@@ -280,7 +280,7 @@
             <p><b>Fundament som underlag:</b> Krävs</p>
             <p class="note">+Vid köp av krona tillkommer 140 mm</p>
             <p class="note">*Kakelugnen går att beställa i en nedkortad version med lägre volym för dig med 205 cm takhöjd. Vid lägre takhöjd kan man välja 370 L och förlänga den något.</p>
-            <button type="button" id="recall5"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+            <button type="button" id="recall5"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
         </div>
 
         <!--Tredje 650L-->
@@ -294,7 +294,7 @@
             </div>
         </div>
 
-        <button type="button" id="collapsible3"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button>   
+        <button type="button" id="collapsible3"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
 
 
         <div id="content3">
@@ -322,7 +322,7 @@
             <p><b>Fundament som underlag:</b> Krävs</p>
             <p class="note">+Vid köp av krona tillkommer 140 mm</p>
             <p class="note">*Kakelugnen går att beställa i en nedkortad version med lägre volym för dig med 205 cm takhöjd. Vid lägre takhöjd kan man välja 370 L och förlänga den något.</p>
-            <button type="button" id="recall3"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+            <button type="button" id="recall3"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
         </div>
 
 
@@ -342,7 +342,7 @@
         </div>
     </div>
 
-    <button type="button" id="collapsible6"><p style="margin-bottom: 5px;">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" style="width: 25px"> </button>   
+    <button type="button" id="collapsible6"><p class="arrdown">Se specifikationer</p><img src="img/keyboard_arrow_down-24px.svg" alt="Downpointing arrow" class="arrdownimg"></button>
 
 
     <div id="content6">
@@ -369,7 +369,7 @@
         <p><b>Avstånd till brännbar vägg baktill:</b> 50 mm</p>
         <p><b>Avständ till brännbar pararell sidovägg:</b> 100 mm</p>
         <p><b>Fundament som underlag:</b> Krävs</p>
-        <button type="button" id="recall6"><img src="img/keyboard_arrow_up-24px.svg" style="width: 25px" alt="Arrow pointing up"></button>
+        <button type="button" id="recall6"><img src="img/keyboard_arrow_up-24px.svg" class="arrdownimg" alt="Arrow pointing up"></button>
     </div>
 
 
